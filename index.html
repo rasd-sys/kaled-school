@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>نظام الإدارة المدرسية الذكي — مدرسة خالد بن الوليد للتعليم الأساسي | منظومة رَصْد</title>
+    <meta name="description" content="البوابة الإلكترونية الرسمية لنظام الإدارة المدرسية بمدرسة خالد بن الوليد للتعليم الأساسي (منظومة رَصْد v8.3.0) — متابعة الحضور والغياب، ملاحظات المعلمين، طلبات المقابلات، المجلة المدرسية، وبوابة ولي الأمر.">
+    <meta name="keywords" content="نظام الإدارة المدرسية, مدرسة خالد بن الوليد للتعليم الأساسي, منظومة رصد, بوابة ولي الأمر, بوابة المعلم, متابعة الغياب المدرسي, المجلة المدرسية, التحول الرقمي التعليمي">
+    <meta name="author" content="أ/ محمود حسن خرابة">
+    <meta name="application-name" content="نظام الإدارة المدرسية — خالد بن الوليد">
+
+    <!-- Smart SEO Layer: Indexing, Open Graph, Twitter Card & Structured Data -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ar_EG">
+    <meta property="og:site_name" content="منظومة رَصْد — مدرسة خالد بن الوليد للتعليم الأساسي">
+    <meta property="og:title" content="نظام الإدارة المدرسية الذكي — مدرسة خالد بن الوليد للتعليم الأساسي">
+    <meta property="og:description" content="المنصة الرقمية المتكاملة لإدارة المدرسة ومتابعة الطلاب والتواصل المباشر بين الإدارة والمعلمين وأولياء الأمور.">
+    <meta property="og:image" content="./icon-512.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="نظام الإدارة المدرسية — مدرسة خالد بن الوليد للتعليم الأساسي">
+    <meta name="twitter:description" content="متابعة يومية للحضور والغياب والملاحظات والمجلة المدرسية — منظومة رَصْد.">
+    <meta name="twitter:image" content="./icon-512.png">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "School",
+          "name": "مدرسة خالد بن الوليد للتعليم الأساسي",
+          "description": "النظام الإلكتروني المتكامل للإدارة المدرسية ومتابعة الطلاب وأولياء الأمور والمعلمين.",
+          "inLanguage": "ar"
+        },
+        {
+          "@type": "WebApplication",
+          "name": "منظومة رَصْد — نظام الإدارة المدرسية",
+          "applicationCategory": "EducationalApplication",
+          "operatingSystem": "Web, Android, iOS",
+          "softwareVersion": "8.3.0",
+          "inLanguage": "ar",
+          "creator": {
+            "@type": "Person",
+            "name": "أ/ محمود حسن خرابة"
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Security Policy (CSP + SEC-09-GH) -->
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self';
+                   frame-src https://script.google.com https://*.googleusercontent.com https://*.google.com;
+                   style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
+                   font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;
+                   img-src 'self' data: blob:;
+                   script-src 'self' 'unsafe-inline';
+                   object-src 'none';
+                   base-uri 'self';">
+
+    <!-- PWA Meta -->
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#1e3a8a">
+    <meta name="color-scheme" content="light dark">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="خالد بن الوليد">
+    <link rel="apple-touch-icon" href="./icon-192.png">
+    <link rel="icon" type="image/png" href="./icon-192.png">
+
+    <!-- Fonts & Icons with SRI (UI-05) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-light: #2563eb;
+            --accent: #0ea5e9;
+            --dark: #0f172a;
+            --success: #10b981;
+            --danger: #ef4444;
+            --warning: #f59e0b;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { height: 100%; width: 100%; overflow: hidden; background: var(--dark); font-family: 'Tajawal', sans-serif; }
+
+        #offline-banner {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 9999;
+            background: var(--danger); color: #fff; text-align: center;
+            padding: 10px; font-weight: 700; font-size: 14px;
+            transform: translateY(-100%); transition: transform 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+        }
+        #offline-banner.show { transform: translateY(0); }
+
+        #appFrame {
+            position: fixed; inset: 0; width: 100%; height: 100%;
+            border: none; background: #f8fafc; opacity: 0;
+            transition: opacity 0.5s ease; z-index: 1;
+        }
+        #appFrame.show { opacity: 1; }
+
+        #splash {
+            position: fixed; inset: 0; z-index: 1000;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #1d4ed8 100%);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+            padding: 20px; text-align: center;
+        }
+        #splash.hide { opacity: 0; transform: scale(1.06); pointer-events: none; }
+
+        .splash-logo-wrap { position: relative; margin-bottom: 24px; display: flex; align-items: center; justify-content: center; }
+        .splash-logo {
+            width: 112px; height: 112px; display: flex; align-items: center; justify-content: center;
+            font-size: 48px; color: #fff; background: rgba(255,255,255,0.14);
+            border: 2px solid rgba(255,255,255,0.28); border-radius: 30px; backdrop-filter: blur(12px);
+            z-index: 2; animation: pulse 2.2s ease-in-out infinite;
+        }
+        .splash-logo-wrap::before, .splash-logo-wrap::after {
+            content: ""; position: absolute; width: 112px; height: 112px;
+            border: 2px solid rgba(147,197,253,0.4); border-radius: 34px;
+            animation: radar 2.6s ease-out infinite; pointer-events: none;
+        }
+        .splash-logo-wrap::after { animation-delay: 1.3s; }
+
+        .splash-title { color: #fff; font-size: 26px; font-weight: 900; margin-bottom: 6px; }
+        .brand { background: linear-gradient(90deg, #93c5fd, #38bdf8, #a7f3d0); -webkit-background-clip: text; background-clip: text; color: transparent; }
+        .splash-sub { color: rgba(255,255,255,0.88); font-size: 15px; font-weight: 700; margin-bottom: 16px; }
+
+        .splash-pills { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-bottom: 28px; }
+        .splash-pill {
+            display: inline-flex; align-items: center; gap: 6px; padding: 5px 14px; border-radius: 20px;
+            font-size: 12px; font-weight: 700; background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.22); color: rgba(255,255,255,0.95);
+        }
+        .pill-version { background: rgba(16,185,129,0.18); border-color: rgba(16,185,129,0.45); color: #6ee7b7; }
+
+        .splash-loader { width: 220px; height: 5px; background: rgba(255,255,255,0.16); border-radius: 10px; overflow: hidden; margin-bottom: 18px; }
+        .splash-loader span { display: block; height: 100%; width: 0; background: linear-gradient(90deg, #38bdf8, #818cf8, #34d399); border-radius: 10px; animation: load 2.2s ease forwards; }
+
+        .status-msg { color: rgba(255,255,255,0.92); font-size: 13px; font-weight: 600; min-height: 20px; }
+        .status-msg.warning { color: var(--warning); }
+        .status-msg.error { color: #fca5a5; }
+
+        .splash-footer { position: absolute; bottom: 48px; left: 0; right: 0; text-align: center; color: rgba(255,255,255,0.62); font-size: 12px; font-weight: 600; }
+        .splash-legal { position: absolute; bottom: 20px; left: 0; right: 0; text-align: center; padding: 0 16px; color: rgba(255,255,255,0.45); font-size: 10.5px; font-weight: 600; }
+
+        #ios-banner {
+            position: fixed; bottom: 22px; left: 50%; transform: translateX(-50%); z-index: 2000;
+            display: none; max-width: 92%; background: rgba(15,23,42,0.96);
+            border: 1px solid rgba(255,255,255,0.22); color: #fff; padding: 16px 20px; border-radius: 16px;
+            font-size: 13px; font-weight: 700; line-height: 1.8; box-shadow: 0 12px 32px rgba(0,0,0,0.45);
+        }
+        #ios-banner .close-btn {
+            position: absolute; top: 8px; left: 8px; width: 24px; height: 24px;
+            background: rgba(255,255,255,0.12); border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            cursor: pointer; color: #fff; font-size: 14px;
+        }
+        #ios-banner b { color: #93c5fd; }
+
+        .float-btn {
+            position: fixed; bottom: 22px; left: 50%; transform: translateX(-50%); z-index: 2000;
+            display: none; align-items: center; gap: 9px; border: none; cursor: pointer;
+            padding: 13px 26px; border-radius: 50px; font-family: 'Tajawal', sans-serif;
+            font-size: 14px; font-weight: 800; color: #fff; text-decoration: none;
+            box-shadow: 0 12px 32px rgba(0,0,0,0.35); animation: slideUp 0.45s ease;
+        }
+        #fallback-btn { background: linear-gradient(135deg, #ef4444, #dc2626); }
+        #install-btn { background: linear-gradient(135deg, #10b981, #059669); }
+
+        @keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.06); } }
+        @keyframes radar { 0% { transform: scale(1); opacity: 0.85; } 100% { transform: scale(1.6); opacity: 0; } }
+        @keyframes load { 0% { width: 0; } 50% { width: 72%; } 100% { width: 100%; } }
+        @keyframes slideUp { from { opacity: 0; transform: translate(-50%, 30px); } to { opacity: 1; transform: translate(-50%, 0); } }
+    </style>
+</head>
+<body>
+    <noscript>
+        <div style="padding:32px;text-align:center;color:#fff;font-family:Tajawal,sans-serif;">
+            <h1>نظام الإدارة المدرسية — مدرسة خالد بن الوليد للتعليم الأساسي</h1>
+            <p>يرجى تفعيل JavaScript في المتصفح لتشغيل المنظومة.</p>
+        </div>
+    </noscript>
+
+    <div id="offline-banner" role="alert">
+        <i class="fa-solid fa-wifi"></i> لا يوجد اتصال بالإنترنت — يرجى التحقق من الشبكة
+    </div>
+
+    <div id="splash" aria-label="شاشة تحميل نظام الإدارة المدرسية">
+        <div class="splash-logo-wrap">
+            <div class="splash-logo"><i class="fa-solid fa-school"></i></div>
+        </div>
+        <div class="splash-title"><span class="brand">نظام الإدارة المدرسية الذكي</span></div>
+        <div class="splash-sub">مدرسة خالد بن الوليد للتعليم الأساسي</div>
+        <div class="splash-pills">
+            <span class="splash-pill"><i class="fa-solid fa-shield-halved"></i> منظومة رَصْد</span>
+            <span class="splash-pill pill-version"><i class="fa-solid fa-code-branch"></i> الإصدار 8.3.0</span>
+        </div>
+        <div class="splash-loader"><span></span></div>
+        <div class="status-msg" id="status-msg">جاري تحميل البوابة المدرسية...</div>
+        <div class="splash-footer">تصميم وتطوير: أ/ محمود حسن خرابة — أخصائي خبير تكنولوجيا تعليم</div>
+        <div class="splash-legal">© 2026 جميع الحقوق محفوظة — منظومة رَصْد للإدارة المدرسية</div>
+    </div>
+
+    <!-- SEC-09-GH: إطار معزول بصلاحيات sandbox الإلزامية وإبقاء كافة التنقلات داخل رابط GitHub Pages -->
+    <iframe id="appFrame"
+            src="https://script.google.com/macros/s/AKfycbzFz4liN8zOgEto3DCUTIc7sJO2krLkUhOHaJmSynOL0HF0dXsUAArjE5A8mDSfbDcf7w/exec"
+            sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-downloads allow-modals"
+            allow="fullscreen; camera; microphone; clipboard-write"
+            referrerpolicy="no-referrer"
+            title="نظام الإدارة المدرسية — مدرسة خالد بن الوليد للتعليم الأساسي"></iframe>
+
+    <div id="ios-banner" role="dialog" aria-label="تثبيت التطبيق على iOS">
+        <span class="close-btn" id="close-ios-banner" aria-label="إغلاق">&times;</span>
+        <b>لتثبيت تطبيق المدرسة على iPhone:</b><br>
+        1. اضغط زر المشاركة <b>⎋</b> أسفل Safari<br>
+        2. اختر «إضافة إلى شاشة البداية» <b>+</b><br>
+        3. اضغط «إضافة» — وسيعمل كتطبيق مستقل
+    </div>
+
+    <button id="install-btn" class="float-btn" type="button"><i class="fa-solid fa-download"></i> تثبيت تطبيق المدرسة</button>
+    <a id="fallback-btn" class="float-btn" href="https://script.google.com/macros/s/AKfycbzFz4liN8zOgEto3DCUTIc7sJO2krLkUhOHaJmSynOL0HF0dXsUAArjE5A8mDSfbDcf7w/exec" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> فتح البوابة الاحتياطية</a>
+
+    <script>
+        const SchoolShellWrapper = (function () {
+            'use strict';
+
+            const CONFIG = Object.freeze({
+                APP_BASE_URL: 'https://script.google.com/macros/s/AKfycbzFz4liN8zOgEto3DCUTIc7sJO2krLkUhOHaJmSynOL0HF0dXsUAArjE5A8mDSfbDcf7w/exec',
+                ALLOWED_ORIGINS: ['https://script.google.com', 'https://script.googleusercontent.com'],
+                TIMINGS: { SLOW_MS: 6000, FAIL_MS: 14000 },
+                STORAGE_KEYS: { IOS_DISMISSED: 'khaled_school_ios_dismissed_v83' }
+            });
+
+            function buildInitialFrameUrl() {
+                const qs = window.location.search || '';
+                if (!qs) return CONFIG.APP_BASE_URL;
+                return CONFIG.APP_BASE_URL + qs;
+            }
+
+            const IframeBridge = {
+                init: function () {
+                    const frame = document.getElementById('appFrame');
+                    const targetSrc = buildInitialFrameUrl();
+                    if (frame.src !== targetSrc) frame.src = targetSrc;
+
+                    // استقبال رسائل التنقل من داخل الإطار لتحديث شريط العنوان دون مغادرة GitHub Pages
+                    window.addEventListener('message', function (ev) {
+                        if (!ev || !ev.data || ev.data.type !== 'RASD_NAV') return;
+                        const originOk = CONFIG.ALLOWED_ORIGINS.some(o => String(ev.origin || '').startsWith(o)) ||
+                                         String(ev.origin || '').endsWith('.googleusercontent.com');
+                        if (!originOk) return;
+                        try {
+                            const navUrl = new URL(ev.data.url, CONFIG.APP_BASE_URL);
+                            const newSearch = navUrl.search || '';
+                            if (window.history && window.history.replaceState) {
+                                window.history.replaceState(null, '', window.location.pathname + newSearch);
+                            }
+                        } catch (e) {}
+                    });
+                }
+            };
+
+            const Network = {
+                init: function () {
+                    const banner = document.getElementById('offline-banner');
+                    const sync = () => banner.classList.toggle('show', !navigator.onLine);
+                    window.addEventListener('online', sync);
+                    window.addEventListener('offline', sync);
+                    sync();
+                }
+            };
+
+            const UX = {
+                state: 'loading',
+                timers: [],
+                init: function () {
+                    this.setupIosBanner();
+                    this.setupPWA();
+                    this.startLoadWatcher();
+                },
+                setupIosBanner: function () {
+                    const banner = document.getElementById('ios-banner');
+                    const closeBtn = document.getElementById('close-ios-banner');
+                    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+                    const isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+                    if (isIOS && !isStandalone && !localStorage.getItem(CONFIG.STORAGE_KEYS.IOS_DISMISSED)) {
+                        setTimeout(() => { banner.style.display = 'block'; }, 2500);
+                    }
+                    closeBtn.addEventListener('click', () => {
+                        banner.style.display = 'none';
+                        localStorage.setItem(CONFIG.STORAGE_KEYS.IOS_DISMISSED, '1');
+                    });
+                },
+                setupPWA: function () {
+                    let deferredPrompt = null;
+                    const installBtn = document.getElementById('install-btn');
+                    window.addEventListener('beforeinstallprompt', (e) => {
+                        e.preventDefault();
+                        deferredPrompt = e;
+                        installBtn.style.display = 'flex';
+                    });
+                    installBtn.addEventListener('click', async () => {
+                        if (!deferredPrompt) return;
+                        deferredPrompt.prompt();
+                        const choice = await deferredPrompt.userChoice;
+                        if (choice && choice.outcome === 'accepted') installBtn.style.display = 'none';
+                        deferredPrompt = null;
+                    });
+                    window.addEventListener('appinstalled', () => {
+                        installBtn.style.display = 'none';
+                    });
+                },
+                startLoadWatcher: function () {
+                    const frame = document.getElementById('appFrame');
+                    const splash = document.getElementById('splash');
+                    const statusMsg = document.getElementById('status-msg');
+                    const fallbackBtn = document.getElementById('fallback-btn');
+
+                    this.timers.push(setTimeout(() => {
+                        if (this.state === 'loading') {
+                            this.state = 'slow';
+                            statusMsg.textContent = 'الشبكة بطيئة قليلاً... جاري إتمام التحميل';
+                            statusMsg.classList.add('warning');
+                        }
+                    }, CONFIG.TIMINGS.SLOW_MS));
+
+                    this.timers.push(setTimeout(() => {
+                        if (this.state !== 'loaded') {
+                            this.state = 'failed';
+                            splash.classList.add('hide');
+                            fallbackBtn.style.display = 'flex';
+                            statusMsg.textContent = 'تعذر التحميل التلقائي — يمكنك استخدام الرابط الاحتياطي';
+                            statusMsg.classList.add('error');
+                        }
+                    }, CONFIG.TIMINGS.FAIL_MS));
+
+                    frame.addEventListener('load', () => {
+                        this.state = 'loaded';
+                        this.timers.forEach(clearTimeout);
+                        setTimeout(() => {
+                            splash.classList.add('hide');
+                            frame.classList.add('show');
+                        }, 450);
+                    });
+                }
+            };
+
+            return {
+                init: function () {
+                    IframeBridge.init();
+                    Network.init();
+                    UX.init();
+                    if ('serviceWorker' in navigator) {
+                        window.addEventListener('load', () => {
+                            navigator.serviceWorker.register('./sw.js', { scope: './' }).catch(() => {});
+                        });
+                    }
+                }
+            };
+        })();
+
+        document.addEventListener('DOMContentLoaded', () => SchoolShellWrapper.init());
+    </script>
+</body>
+</html>
