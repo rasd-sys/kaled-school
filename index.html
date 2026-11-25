@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <title>نظام الإدارة المدرسية الذكي — مدرسة خالد بن الوليد للتعليم الأساسي | منظومة رَصْد</title>
-    <meta name="description" content="البوابة الإلكترونية الرسمية لنظام الإدارة المدرسية بمدرسة خالد بن الوليد للتعليم الأساسي (منظومة رَصْد v8.3.0) — متابعة الحضور والغياب، ملاحظات المعلمين، طلبات المقابلات، المجلة المدرسية، وبوابة ولي الأمر.">
+    <meta name="description" content="البوابة الإلكترونية الرسمية لنظام الإدارة المدرسية بمدرسة خالد بن الوليد للتعليم الأساسي (منظومة رَصْد v8.3.3) — متابعة الحضور والغياب، ملاحظات المعلمين، طلبات المقابلات، المجلة المدرسية، وبوابة ولي الأمر.">
     <meta name="keywords" content="نظام الإدارة المدرسية, مدرسة خالد بن الوليد للتعليم الأساسي, منظومة رصد, بوابة ولي الأمر, بوابة المعلم, متابعة الغياب المدرسي, المجلة المدرسية, التحول الرقمي التعليمي">
     <meta name="author" content="أ/ محمود حسن خرابة">
     <meta name="application-name" content="نظام الإدارة المدرسية — خالد بن الوليد">
@@ -38,7 +38,7 @@
           "name": "منظومة رَصْد — نظام الإدارة المدرسية",
           "applicationCategory": "EducationalApplication",
           "operatingSystem": "Web, Android, iOS",
-          "softwareVersion": "8.3.0",
+          "softwareVersion": "8.3.2",
           "inLanguage": "ar",
           "creator": {
             "@type": "Person",
@@ -202,7 +202,7 @@
         <div class="splash-sub">مدرسة خالد بن الوليد للتعليم الأساسي</div>
         <div class="splash-pills">
             <span class="splash-pill"><i class="fa-solid fa-shield-halved"></i> منظومة رَصْد</span>
-            <span class="splash-pill pill-version"><i class="fa-solid fa-code-branch"></i> الإصدار 8.3.0</span>
+            <span class="splash-pill pill-version"><i class="fa-solid fa-code-branch"></i> الإصدار 8.3.2</span>
         </div>
         <div class="splash-loader"><span></span></div>
         <div class="status-msg" id="status-msg">جاري تحميل البوابة المدرسية...</div>
@@ -212,8 +212,8 @@
 
     <!-- SEC-09-GH: إطار معزول بصلاحيات sandbox الإلزامية وإبقاء كافة التنقلات داخل رابط GitHub Pages -->
     <iframe id="appFrame"
-            src="https://script.google.com/macros/s/AKfycbxzz7LZN1dR5LDQMqO16vCx5p1adT-Nyfobz0dsGmZV-yZP-qi8CE1xXiU5XDFiIszQ/exec?magazine=true"
-            sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-downloads allow-modals"
+            src="https://script.google.com/macros/s/AKfycbxzz7LZN1dR5LDQMqO16vCx5p1adT-Nyfobz0dsGmZV-yZP-qi8CE1xXiU5XDFiIszQ/exec"
+            sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-downloads allow-modals allow-top-navigation-by-user-activation"
             allow="fullscreen; camera; microphone; clipboard-write"
             referrerpolicy="no-referrer"
             title="نظام الإدارة المدرسية — مدرسة خالد بن الوليد للتعليم الأساسي"></iframe>
@@ -227,14 +227,14 @@
     </div>
 
     <button id="install-btn" class="float-btn" type="button"><i class="fa-solid fa-download"></i> تثبيت تطبيق المدرسة</button>
-    <a id="fallback-btn" class="float-btn" href="https://script.google.com/macros/s/AKfycbxzz7LZN1dR5LDQMqO16vCx5p1adT-Nyfobz0dsGmZV-yZP-qi8CE1xXiU5XDFiIszQ/exec?magazine=true" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> فتح البوابة الاحتياطية</a>
+    <a id="fallback-btn" class="float-btn" href="https://script.google.com/macros/s/AKfycbxzz7LZN1dR5LDQMqO16vCx5p1adT-Nyfobz0dsGmZV-yZP-qi8CE1xXiU5XDFiIszQ/exec" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> فتح البوابة الاحتياطية</a>
 
     <script>
         const SchoolShellWrapper = (function () {
             'use strict';
 
             const CONFIG = Object.freeze({
-                APP_BASE_URL: 'https://script.google.com/macros/s/AKfycbxzz7LZN1dR5LDQMqO16vCx5p1adT-Nyfobz0dsGmZV-yZP-qi8CE1xXiU5XDFiIszQ/exec?magazine=true',
+                APP_BASE_URL: 'https://script.google.com/macros/s/AKfycbxzz7LZN1dR5LDQMqO16vCx5p1adT-Nyfobz0dsGmZV-yZP-qi8CE1xXiU5XDFiIszQ/exec',
                 ALLOWED_ORIGINS: ['https://script.google.com', 'https://script.googleusercontent.com'],
                 TIMINGS: { SLOW_MS: 6000, FAIL_MS: 14000 },
                 STORAGE_KEYS: { IOS_DISMISSED: 'khaled_school_ios_dismissed_v83' }
@@ -252,14 +252,24 @@
                     const targetSrc = buildInitialFrameUrl();
                     if (frame.src !== targetSrc) frame.src = targetSrc;
 
-                    // استقبال رسائل التنقل من داخل الإطار لتحديث شريط العنوان دون مغادرة GitHub Pages
+                    // استقبال رسائل التنقل من داخل الإطار وتوجيه appFrame مباشرة دون مغادرة GitHub Pages (SEC-09-GH v8.3.3)
                     window.addEventListener('message', function (ev) {
                         if (!ev || !ev.data || ev.data.type !== 'RASD_NAV') return;
                         const originOk = CONFIG.ALLOWED_ORIGINS.some(o => String(ev.origin || '').startsWith(o)) ||
                                          String(ev.origin || '').endsWith('.googleusercontent.com');
                         if (!originOk) return;
                         try {
+                            if (ev.source && typeof ev.source.postMessage === 'function') {
+                                ev.source.postMessage({ type: 'RASD_NAV_ACK', reqId: ev.data.reqId || '' }, '*');
+                            }
                             const navUrl = new URL(ev.data.url, CONFIG.APP_BASE_URL);
+                            const targetOriginOk = navUrl.origin === 'https://script.google.com' ||
+                                                   navUrl.origin.endsWith('.googleusercontent.com');
+                            if (!targetOriginOk) return;
+                            const finalFrameSrc = CONFIG.APP_BASE_URL + (navUrl.search || '') + (navUrl.hash || '');
+                            if (frame && frame.src !== finalFrameSrc) {
+                                frame.src = finalFrameSrc;
+                            }
                             const newSearch = navUrl.search || '';
                             if (window.history && window.history.replaceState) {
                                 window.history.replaceState(null, '', window.location.pathname + newSearch);
