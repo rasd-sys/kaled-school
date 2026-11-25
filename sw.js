@@ -1,4 +1,4 @@
-const CACHE_NAME = 'khaled-school-v8.3.0';
+const CACHE_NAME = 'khaled-school-v8.3.3';
 const OFFLINE_URL = './offline.html';
 const CORE_ASSETS = [
   './',
